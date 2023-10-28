@@ -3,7 +3,9 @@ Unofficial Meta com.oculus.* packages DOCs
 
 # getting a list of com.oculous services
 
+```
 ➜  ~ adb shell 'pm list packages | grep "com.oculus"
+
 package:com.oculus.assetdelivery
 package:com.oculus.avatareditor
 package:com.oculus.updater
@@ -74,10 +76,13 @@ package:com.oculus.micservice
 package:com.oculus.mobile_mrc_setup
 package:com.oculus.vralertservice
 package:com.oculus.shellenv
+```
 
 # package:com.oculus.shellenv
 
+```
 ➜  ~ adb shell dumpsys package com.oculus.shellenv | grep -i activity 
 Activity Resolver Table:
         9da11eb com.oculus.shellenv/.ShellEnvActivity filter 9cacde1
         9da11eb com.oculus.shellenv/.ShellEnvActivity filter a116b48
+```
